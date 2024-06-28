@@ -1,5 +1,4 @@
 const fs = require("fs");
-const path = require("path");
 
 const tollURL =
 	"https://data.techforpalestine.org/api/v2/casualties_daily.json";
