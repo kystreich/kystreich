@@ -8,6 +8,8 @@ let readMePath = path.join(__dirname, "./README.MD");
 
 const fileData = fs.readFileSync(readMePath, "utf-8");
 
+console.log(fileData);
+
 async function getToll() {
 	let responseData = await fetch(tollURL);
 	let eventArray = await responseData.json();
@@ -26,7 +28,7 @@ async function getToll() {
 async function updateFile(toll) {
 	let newData = fileData.replace(
 		/<span id="toll">.*/g,
-		`<span id="toll">${toll}</span> dead, individuals in Gaza desperately need internet connections to share the horrors of Israel's attacks against Palestine.`
+		`<span id="toll">${toll}</span> dead, individuals in Gaza desperately need internet connections to share the horrors of Israel's attacks against Palestine.</h4></l1>`
 	);
 
 	fs.writeFileSync(readMePath, newData);
