@@ -1,8 +1,7 @@
 name: Auto Update Toll
 
 on:
-  schedule:
-    - cron: '*/30 * * * *'
+  workflow_dispatch:
 
 jobs:
   update-readme:
@@ -17,7 +16,10 @@ jobs:
           node-version: '18'
       
       - name: Update README
-        run: node ./updater.js
+        run: |
+          npm i
+          npm ci
+          npm run start
       
       - name: Commit and push changes
         run: |
