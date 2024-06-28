@@ -17,9 +17,10 @@ jobs:
           node-version: '18'
       
       - name: Update README
-      - run: npm i
-      - run: npm ci
-      - run: npm run start
+        run: |
+          npm i
+          npm ci
+          npm run start
       
       - name: Commit and push changes
         run: |
