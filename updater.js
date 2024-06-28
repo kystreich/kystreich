@@ -35,8 +35,8 @@ async function updateFile(toll) {
 	let fileData = await getReadMe();
 
 	let newData = fileData.replace(
-		/<span id="toll">.*/g,
-		`<span id="toll">${toll}</span> dead, individuals in Gaza desperately need internet connections to share the horrors of Israel's attacks against Palestine.</h4></l1>`
+		/<span id="toll">.*?<\/span>/g,
+		`<span id="toll">${toll}</span>`
 	);
 
 	fs.writeFileSync("./README.md", newData.replaceAll("\\n", "\n"));
