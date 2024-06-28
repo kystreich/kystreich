@@ -1,0 +1,12 @@
+{
+  "name": "readme",
+  "version": "1.0.0",
+  "description": "<h1>\r <img src=\"./ferret.gif\" height=\"25\">Hi! I'm Kyle, a fullstack web developer.</h1>",
+  "main": "updater.js",
+  "scripts": {
+    "start": "node ./updater.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
