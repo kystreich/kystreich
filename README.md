@@ -5,5 +5,6 @@
 > <l1><h3><b>💮 Activism</b> - After over half a year of constant besiegment by the IDF, and over <span id="toll" color="red">30000</span> dead, individuals in Gaza desperately need internet connections to share the horrors of Israel's attacks against Palestine.</h3  ></l1>
 <ul>
     🍉Esims - <a href="https://gazaesims.com/">ESims</a> &nbsp;&nbsp;&nbsp;
-    🍉UNWRA - <a href="https://www.unrwa.org/">UNWRA</a>
+    🍉General Aid - <a href="https://www.unrwa.org/">UNWRA</a> &nbsp;&nbsp;&nbsp;
+    🍉Child Relief Fund - <a href="https://www.pcrf.net/">PCRF</a>
 </ul>
