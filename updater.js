@@ -7,7 +7,9 @@ const readMeRaw =
 	"https://raw.githubusercontent.com/kystreich/kystreich/master/README.md";
 
 async function getReadMe() {
-	let responseData = await fetch(readMeRaw);
+	let responseData = await fetch(readMeRaw, {
+		cache: "no-cache",
+	});
 
 	let responseText = await responseData.text();
 
@@ -33,8 +35,6 @@ async function getToll() {
 
 async function updateFile(toll) {
 	let fileData = await getReadMe();
-
-	console.log(fileData);
 
 	let newData = fileData.replace(
 		/<span id="toll">.*?<\/span>/g,
