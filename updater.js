@@ -34,6 +34,8 @@ async function getToll() {
 async function updateFile(toll) {
 	let fileData = await getReadMe();
 
+	console.log(fileData);
+
 	let newData = fileData.replace(
 		/<span id="toll">.*?<\/span>/g,
 		`<span id="toll">${toll}</span>`
